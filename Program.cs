@@ -19,7 +19,7 @@ namespace sda_csharp_exercises
             int temp = 0;
             for (int j = 0; j < array.Length - j; j++)
             {
-                for (int i = 0; i < array.Length; i++)
+                for (int i = 0; i < array.Length -j; i++)
 
                 {
                     temp = array[i];

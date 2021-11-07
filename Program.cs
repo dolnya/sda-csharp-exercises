@@ -14,7 +14,7 @@ namespace sda_csharp_exercises
 
         //youtube.com/watch? v = lyZQPjUT5B4 & t = 146s
         {
-            int[] array = new int[] { 5, 1, 4, 2, 8, 6, 3 };
+            int[] array = new int[] { 5, 1, 4, 2, 8, 6, 3, 4, 4};
 
             int temp = 0;
             for (int j = 0; j < array.Length - j; j++)
@@ -25,7 +25,7 @@ namespace sda_csharp_exercises
                     temp = array[i];
                     if (i + 1 < array.Length-j)
                     {
-                        if (temp > array[i + 1])
+                        if (temp >= array[i + 1])
                         {
                             temp = array[i + 1];
                             array[i + 1] = array[i];

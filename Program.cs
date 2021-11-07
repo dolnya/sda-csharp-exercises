@@ -14,8 +14,23 @@ namespace sda_csharp_exercises
             //Liczba sztuk: 1 łączna cena: 5zł
             //Liczba sztuk: 2 łączna cena: 10zł
             //Liczba sztuk: 3 łączna cena: 15zł
+             
         {
+            Console.Write("Liczba prodktów: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Cena produktów: ");
+            int price = Convert.ToInt32(Console.ReadLine());
 
+            BucketPrice(number, price);
         }
+        public static void BucketPrice(int number, int price)
+        {
+            for (int i = 1; i <= number; i++)
+            {
+                Console.WriteLine($"Liczba produktów: {i} łączna cena: {price * i}zł");
+            }
+        }
+
+        
     }
 }

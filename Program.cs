@@ -30,6 +30,8 @@ namespace sda_csharp_exercises
             Console.WriteLine(DeCode(password2));
 
         }
+
+        // Cedits Emil :)
         static string Code(string Password)
         {
             string str = Password;

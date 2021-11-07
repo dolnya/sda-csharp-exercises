@@ -26,10 +26,78 @@ namespace sda_csharp_exercises
         //lub liczb i założyć, że np. 1 to kobieta, 2 to mężczyzna, lub jako zmienna logiczna, np.isFemale
         //- pamiętaj, że nie każdy ma drugie imię i numer mieszkania.
         {
+            Console.WriteLine("Proszę wpisać imię, drugie imie i nazwisko oraz wiek");
+            string name = Console.ReadLine();
+            string secname = Console.ReadLine();
+            string surname = Console.ReadLine();
+            int age = Convert.ToInt32(Console.ReadLine());
+            bool sex = true; // false = kobieta  true mężczyzna
+            if (name.EndsWith("a"))
+            {
+                sex = false;
+            }
 
-
-
-
+            Console.WriteLine("Prosze podać nazwę ulicy i number domu i mieszkania");
+            string street = Console.ReadLine();
+            string number = Console.ReadLine();
+            string flat = Console.ReadLine();
+            
+            Console.Write(sex);
+            
+            
+            Console.WriteLine($"{name} {secname} {surname}");
+            Console.WriteLine($"ul.{street} {number}/{flat}");
+            if (sex == true) // mężczyna
+            {
+                if (age > 18) // pełnoletni
+                {
+                    Console.WriteLine($"Szanowny Panie {surname}");
+                    Console.WriteLine("Zaprazamy Pana serdecznie na otwarcie naszego sklepu!");
+                    Console.WriteLine("Powitamy Pana kieliszkiem szampana.");
+                    if (age > 60)
+                    {
+                        Console.WriteLine("I zapraszamy do gry w bingo.");
+                        Console.WriteLine("Z wyrazami szacunku.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Czekamy na Pana.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Drogi Użytkowniku {name}");
+                    Console.WriteLine("Zaprazamy cię serdecznie na otwarcie naszego sklepu!");
+                    Console.WriteLine("Powitamy cię kubkiem gorączej czekolady.");
+                    Console.WriteLine("Do zobaczenia");
+                }
+            }
+            else // kobieta
+            {
+                if (age > 18) // pełnoletni
+                {
+                    Console.WriteLine($"Szanowny Pani {surname}");
+                    Console.WriteLine("Zaprazamy Panią serdecznie na otwarcie naszego sklepu!");
+                    Console.WriteLine("Powitamy Panią kieliszkiem szampana.");
+                    if (age > 60)
+                    {
+                        Console.WriteLine("I zapraszamy do gry w bingo.");
+                        Console.WriteLine("Z wyrazami szacunku.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Czekamy na Panią.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Drogi Użytkowniczko {name}");
+                    Console.WriteLine("Zaprazamy cię serdecznie na otwarcie naszego sklepu!");
+                    Console.WriteLine("Powitamy cię kubkiem gorączej czekolady.");
+                    Console.WriteLine("Do zobaczenia");
+                }
+            }
+            
         }
     }
 }

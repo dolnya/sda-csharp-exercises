@@ -22,22 +22,28 @@ namespace sda_csharp_exercises
             int length = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Wprowadz znak");
             string znak = Console.ReadLine();
-            for (int i =0; i<length; i++)
+            Triagnle(znak, length);
+            
+        }
+        static void Triagnle(string Znak, int Length)
+        {
+            for (int i = 0; i < Length; i++)
             {
                 for (int j = 0; j < i; j++)
                 {
-                    Console.Write($"{znak}");
+                    Console.Write($"{Znak}");
                 }
                 Console.WriteLine();
             }
-            for (int i = length; i > 0; i--)
+            for (int i = Length; i > 0; i--)
             {
                 for (int j = 0; j < i; j++)
                 {
-                    Console.Write($"{znak}");
+                    Console.Write($"{Znak}");
                 }
                 Console.WriteLine();
             }
         }
+        
     }
 }

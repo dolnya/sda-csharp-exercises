@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 namespace sda_csharp_exercises
 {
     class Program
@@ -27,7 +26,7 @@ namespace sda_csharp_exercises
             string digits = "0123456789";
             string specialChars = "&*$#";
             
-            if ((password.Length > minLenght) && (Contains(password,uppercase)) && Contains(password, lowercase) && Contains(password, digits) && Contains(password, specialChars))
+            if ((password.Length > minLenght) && Contains(password,uppercase) && Contains(password, lowercase) && Contains(password, digits) && Contains(password, specialChars))
             {
                 Console.WriteLine("Ok");
             }

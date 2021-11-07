@@ -25,7 +25,7 @@ namespace sda_csharp_exercises
             string uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             string lowercase = "abcdefghijklmnopqrstuvwxyz";
             string digits = "0123456789";
-            string specialChars = "#?!,-'/`_*$";
+            string specialChars = "&*$#";
             
             if ((password.Length > minLenght) && (Contains(password,uppercase)) && Contains(password, lowercase) && Contains(password, digits) && Contains(password, specialChars))
             {

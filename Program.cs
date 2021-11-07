@@ -18,7 +18,7 @@ namespace sda_csharp_exercises
             zauważ, że w tablicy będą tylko liczby naturalne, czyli >= 0.Duplikat możesz więc nadpisać
             dowolną liczbą ujemną.
             */
-            int[] numbers = { 2, 5, 1, 2, 5 };
+            int[] numbers = { 2, 5, 1, 2, 5};
             int[] tem = new int[numbers.Length];
             int i = 0;
 

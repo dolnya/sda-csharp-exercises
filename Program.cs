@@ -15,8 +15,9 @@ namespace sda_csharp_exercises
             Console.WriteLine("Wpisz różnicę ciągu");
             int element = Convert.ToInt32(Console.ReadLine());
             Console.Write("Ciąg =>");
-            Console.Write($" {first}");
-            for (int i =1; i<lenght; i++)
+            
+
+            for (int i =0; i<lenght; i++)
             {
                 Console.Write($" {first+(i*element)}");
             }

@@ -18,7 +18,7 @@ namespace sda_csharp_exercises
                 return firstName;
 
             }
-            set 
+            set
             {
                 firstName = value;
             }
@@ -41,6 +41,20 @@ namespace sda_csharp_exercises
         //    return DateTime.Today.Year - YearOfBirth >= 18;
         //    równoznaczny zapis co powyżej.
         //}
+
+        public Person() : this("", "", 1900)
+        {
+            Console.WriteLine("Called constructor without parameters.");
+        }
+
+        public Person(string firstName, string lastName, int yearOfBirth)
+        {
+            Console.WriteLine("Called constructor with parameters.");
+            FirstName = firstName;
+            LastName = lastName;
+            YearOfBirth = yearOfBirth;
+
+        }
 
     }
 }

@@ -37,6 +37,12 @@ namespace sda_csharp_exercises
             Console.WriteLine($"My name is {LastName}. {FirstName}, {LastName}");
         }
         public bool IsAdult() => DateTime.Today.Year - YearOfBirth >= 18;
+
+        internal void Add(Employee employee)
+        {
+            throw new NotImplementedException();
+        }
+
         //{
         //    return DateTime.Today.Year - YearOfBirth >= 18;
         //    równoznaczny zapis co powyżej.

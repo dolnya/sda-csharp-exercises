@@ -12,5 +12,17 @@ namespace sda_csharp_exercises
         {
             get; set;
         }
+        public Employee() : this("", "", 1900, 0)
+        {
+            Console.WriteLine("Odwołanie do emplyeee bez param.");
+        }
+        public Employee(string firstName, string lastName, int yearOfBirth, decimal salary) :
+            base(firstName, lastName, yearOfBirth)
+        {
+            Console.WriteLine("Called Employee constructor with parameters.");
+
+            Salary = salary;
+        }
+
     }
 }

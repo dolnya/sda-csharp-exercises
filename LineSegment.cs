@@ -10,7 +10,7 @@ namespace sda_csharp_exercises
     internal class LineSegment
     {
         private List<MyPoint> points = new List<MyPoint>();
-
+        
         public LineSegment(MyPoint pointA, MyPoint pointB)
         {
             points.Add(pointA);

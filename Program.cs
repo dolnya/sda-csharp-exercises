@@ -32,9 +32,10 @@ namespace sda_csharp_exercises
         {
             MyPoint first = new MyPoint(4,2);
             MyPoint second = new MyPoint(6,6);
-
-            LineSegment lineSegment1 = new LineSegment(first, second);
-            LineSegment lineSegment2 = new LineSegment(2, 6, 3, 1);
+            MyPoint3D first3D = new MyPoint3D(4, 2,45);
+            MyPoint3D second3D = new MyPoint3D(6, 6,12);
+            LineSegment lineSegment1 = new LineSegment(first3D, second3D);
+            LineSegment lineSegment2 = new LineSegment(2, 6, 3, 1,2,5);
            
             Console.WriteLine(lineSegment1.Length());
             Console.WriteLine(lineSegment2.Length());

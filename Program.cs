@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Threading.Channels;
 
 namespace sda_csharp_exercises
 {
@@ -16,6 +18,13 @@ namespace sda_csharp_exercises
         //- drugi cztery wartości liczbowe reprezentujące współrzędne tych punktów.
         //Do wyliczania długości linii warto skorzystać z poniższej informacji:
         {
+            MyPoint first = new MyPoint(4,2);
+            MyPoint second = new MyPoint(6,6);
+
+            LineSegment lineSegment1 = new LineSegment(first, second);
+            Console.WriteLine(lineSegment1.Length());
+            LineSegment lineSegment2 = new LineSegment(2, 6, 3, 1);
+            Console.WriteLine(lineSegment2.Length());
         }
     }
 }

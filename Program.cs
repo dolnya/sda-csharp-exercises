@@ -22,8 +22,9 @@ namespace sda_csharp_exercises
             MyPoint second = new MyPoint(6,6);
 
             LineSegment lineSegment1 = new LineSegment(first, second);
-            Console.WriteLine(lineSegment1.Length());
             LineSegment lineSegment2 = new LineSegment(2, 6, 3, 1);
+           
+            Console.WriteLine(lineSegment1.Length());
             Console.WriteLine(lineSegment2.Length());
         }
     }

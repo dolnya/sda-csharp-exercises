@@ -16,10 +16,13 @@ namespace sda_csharp_exercises
             points3D.Add(pointA);
             points3D.Add(pointB); 
         }
-
-
-
         public double Length()
+        {
+            return Math.Sqrt(Math.Pow(points3D[1].X - points3D[0].X, 2) + Math.Pow(points3D[1].Y - points3D[0].Y, 2) );
+        }
+
+
+        public double Length3D()
         {
             return Math.Sqrt(Math.Pow(points3D[1].X - points3D[0].X, 2) + Math.Pow(points3D[1].Y - points3D[0].Y, 2) + Math.Pow(points3D[1].Z - points3D[0].Z, 2));
         }

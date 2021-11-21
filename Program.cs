@@ -26,6 +26,11 @@ namespace sda_csharp_exercises
         //klasie stwórz metodę GetValue(), która będzie dostarczała informacji o tym ile pieniędzy jest
         //przechowywane na wszystkich kontach.
         {
+
+            Bank bank = new Bank();
+            Account account = new Account(1500M);
+            account.IncreaseBalance(400);
+            SavingAccount savingAccount = new SavingAccount(505050);
         }
     }
 }

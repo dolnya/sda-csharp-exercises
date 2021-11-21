@@ -17,6 +17,18 @@ namespace sda_csharp_exercises
         //- jeden pobierający dwa punkty,
         //- drugi cztery wartości liczbowe reprezentujące współrzędne tych punktów.
         //Do wyliczania długości linii warto skorzystać z poniższej informacji:
+
+        //E24
+        //Rozwijając zadanie E23, utwórz klasę MyPoint3D, która będzie też przechowywała współrzędną: z.
+        //Co zmienisz w klasie LineSegment aby stworzyć linię w przestrzeni trójwymiarowej?
+        //Jak zmienisz wyliczanie długości linii aby obejmowała również linie w przestrzeni
+        //trójwymiarowej?
+        //Do wyliczania długości linii 3D warto skorzystać z poniższej informacji:
+
+        //Podpowiedź: może wato dodać polimorficzną metodę GetDistanceFromPoint(MyPoint point) do
+        //klasy MyPoint i przedefiniować w klasie MyPoint3D?
+
+
         {
             MyPoint first = new MyPoint(4,2);
             MyPoint second = new MyPoint(6,6);
